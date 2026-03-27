@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week3</title>
+    <link <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+    crossorigin="anonymous">
+<body>
+    <h1 class="text-center">Welcome!</h1>
+    <div class="container">
+        <div class="row justify-content-center mt-3">
+            <div class="col-3">
+                <div class="input-group">
+                    <input
+                    type="text"
+                    id="input_1"
+                    class="form-control"
+                    placeholder="input 1"
+                    />
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="input-group">
+                    <input
+                    type="text"
+                    id="input_2"
+                    class="form-control"
+                    placeholder="input 2"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-3">
+            <button type="button" class="btn btn-primary col-2" id="button_sum">
+                Boolean Value
+            </button>
+        </div>
+
+        <div class="row text-center mt-4">
+            <span id="result">Result</span>
+        </div>
+    </div>
+    <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
+    crossorigin="anonymous"
+    ></script>
+    <script>
+        let input_1, input_2, result;
+
+        document.getElementById("button_sum").onclick = function () {
+            input_1 = document.getElementById("input_1").value;
+            console.log('input_1 boolean.html:111 = football type=string');
+
+            input_2 = document.getElementById("input_2").value;
+            console.log('input_2 boolean.html:113 = football type=string');
+
+            result = (input_1 === input_2);
+            console.log('Result boolean.html:116 = true type=boolean');
+            document.getElementById("result").textContent = result;
+        }
+    </script>
+</body>
+</html>
